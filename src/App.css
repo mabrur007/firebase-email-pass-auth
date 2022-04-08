@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-form input{
+/* form input{
   margin: 20px auto;
   display: block;
   padding: 12px 22px;
@@ -11,7 +11,7 @@ form input{
 }
 form input:focus{
   border: 2px solid green;
-}
+} */
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
