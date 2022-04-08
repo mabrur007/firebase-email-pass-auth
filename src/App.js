@@ -5,10 +5,26 @@ import { getAuth } from "firebase/auth";
 const auth = getAuth(app)
 
 function App() {
+
+  const handleEmailBlur = (event) => {
+    console.log(event.target.value);
+  }
+
+  const handlePasswordBlur = (event) => {
+    console.log(event.target.value);
+  }
+
+  const handleSubmit = (event) => {
+    console.log('form submitted');
+    event.preventDefault();
+  }
   return (
     <div className="App">
-      <input type="text" name="" id="" />
-      <input type="password" name="" id="" />
+      <form onSubmit={handleSubmit}>
+        <input onBlur={handleEmailBlur} type="email" placeholder='email'/>
+        <input onBlur={handlePasswordBlur} type="password" placeholder='password' />
+        <input type="submit" value="Submit" />
+      </form>
     </div>
   );
 }

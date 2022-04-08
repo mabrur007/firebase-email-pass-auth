@@ -2,9 +2,15 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+form input{
+  margin: 20px auto;
+  display: block;
+  padding: 12px 22px;
+  border: 2px solid crimson;
+  border-radius: 6px;
+}
+form input:focus{
+  border: 2px solid green;
 }
 
 @media (prefers-reduced-motion: no-preference) {
